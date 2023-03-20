@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>IService</title>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#hero"><img class="img-logo" src="media/logo.png" alt="logo"></a>
+                <p>IService V.B</p>
+            </div>
+            <nav class="nav" id="nav">
+                <button class="cerrar-menu" id="cerrarmenu"><i class="bi bi-x"></i></button>
+                <ul class="nav-list">
+                    <li> <a href="#nuestro-servicio">Servicios</a></li>
+                    <li> <a href="#somos-iservice">Nosotros</a></li>
+                    <li> <a href="#caracteristicas">Reparación</a></li>
+                    <li> <a href="#final">Contácto</a></li>
+                </ul>
+            </nav>
+            <button id="abrirmenu" class="abrir-menu"><i class="bi bi-list"></i></button>
+        </div>
+    </header>
+
+
+    <section id="hero">
+        <h1>Servicio técnico</h1>
+        <h2>Apple</h2>
+        <button><a href="https://wa.link/pd03nr:"target="_blank">Contácto</a></button>
+    </section>
+
+    <section id="nuestro-servicio">
+        <div class="container">
+            <hr>
+            <h2><span><span class="apple">Calidad y confianza</span></span></h2>
+            <div class="servicios">
+                <div class="carta">
+                    <h3>Reparación equipos</h3>
+                    <p>Repara tu iPhone con nosotros. Utilizamos tecnología de última generación y equipo altamente capacitado para una solución rápida y eficiente</p>
+                    <button onclick="abrir(this)" data-video="media/equipo.mp4">+ Info</button>
+                    
+                    <div class="miPopup">
+                        <video controls muted autoplay>
+                            <source src="media/equipo.mp4" type="video/mp4">
+                        </video>
+                        <button class="cerrar" onclick="ocultarPopup(this.parentElement)">Cerrar</button>
+                    </div>
+                </div>
+                <div class="carta">
+                    <h3>Cambio baterías</h3> 
+                    <p>Recupera la funcionalidad de tu iPhone en minutos con nuestro servicio de reparación de pantallas. Utilizamos piezas originales</p>
+                    <button onclick="abrir(this)" data-video="media/bateria.mp4">+ Info</button>
+                    
+                        <div class="miPopup">
+                                <video controls muted autoplay>
+                                <source src="media/bateria.mp4"  type="video/mp4">
+                                </video>
+                                <button class="cerrar" onclick="ocultarPopup(this.parentElement)">Cerrar</button>
+                        </div>
+                </div>
+
+                <div class="carta">
+                    <h3>Pantallas nuevas</h3>
+                    <p>¡Deja tu pantalla en nuestras manos y volve a la acción en minutos! Reparamos tu dispositivo con piezas de calidad</p>
+                    <button onclick="abrir(this)" data-video="media/pantalla.mp4">+ Info</button>
+                    
+                    
+                    <div class="miPopup">
+                        <video controls muted autoplay>
+                            <source src="media/pantalla.mp4" type="video/mp4">
+                        </video>
+                        <button class="cerrar" onclick="ocultarPopup(this.parentElement)">Cerrar</button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+
+    <section id="somos-iservice">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+
+                <h2> <span class="iservice">IService V.B.</span></h2>
+                <p>Una empresa dedicada a la reparación de dispositivos Apple ubicada en el centro de Villa Ballester. Somos un equipo de profesionales altamente capacitados y con experiencia en la industria garantizando un servicio de <strong> calidad y confianza</strong>.
+
+                    <br><br> Solucionamos cualquier problema que se presente en tus dispositivos Apple. Contamos con conocimientos y herramientas necesarias para ofrecerte un servicio <strong> rápido y efectivo</strong>.
+                    
+                    <br><br> Sabemos lo importante que es para <strong> tu tranquilidad </strong>un teléfono en buen estado, por eso trabajamos con rapidez y eficiencia.
+                    
+                    No dudes en contactarnos para cualquier consulta o solicitud de servicio.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="caracteristicas">
+        <div class="container">
+            <h1> <span> <span class="apple">Soluciones expertas para todos tus dispositivos APPLE</span></h1>
+            <div class="productos">
+              <div class="producto">
+                <img src="media/productoiphone.png" alt="Iphone">
+                <p>Iphone</p>
+              </div>
+              <div class="producto">
+                <img src="media/productoipad.png" alt="Ipad">
+                <p>Ipad</p>
+              </div>
+              <div class="producto">
+                <img src="media/productoaudifono.png" alt="AirPod">
+                <p>AirPod</p>
+              </div>
+              <div class="producto">
+                <img src="media/productoreloj.png" alt="IWatch">
+                <p>IWatch</p>
+              </div>
+            </div>
+            <button><a href="https://wa.link/pd03nr:"target="_blank">Conocénos</a></button>
+        </div>
+    </section>
+
+    <section id="final">
+        
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d690.8030050085691!2d-58.5520933380232!3d-34.55276049252653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb767307ab4c7%3A0xe389f03d97cf943!2sService%20VB%20Servicio%20Tecnico%20Apple!5e0!3m2!1ses!2sar!4v1678702366117!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contacto">
+            <div class="ubicacion">
+                <h3>Contácto</h3>
+                <p>Local: Intendente Witcom 2001, Villa Ballester <br><br> Teléfono: 1546598765</p>
+            </div>
+            <h3>Seguínos</h3>
+            <div class="redes">
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-whatsapp"></a>
+              <a href="#" class="fa fa-facebook"></a>
+            </div>
+        </div>
+      </section>
+      
+
+
+
+
+    <script>
+
+            const nav = document.querySelector("#nav");
+            const abrirmenu = document.querySelector("#abrirmenu");
+            const cerrarmenu = document.querySelector("#cerrarmenu");
+
+            abrirmenu.addEventListener("click", () => {
+                nav.classList.add("visible");
+            })
+
+            cerrarmenu.addEventListener("click", () => {
+                nav.classList.remove("visible");
+            })
+
+
+
+
+        function abrir(btn) {
+            var videoSrc = btn.dataset.video;
+            var miPopup = btn.parentElement.querySelector(".miPopup");
+            var fondoPopup = btn.parentElement.parentElement.querySelector(".fondoPopup");
+            miPopup.querySelector("video source").src = videoSrc;
+            miPopup.style.display = "block";
+            fondoPopup.style.display = "block";
+            miPopup.querySelector("video").load();
+            miPopup.querySelector("video").play();
+            var botonCerrar = miPopup.querySelector(".cerrar");
+            botonCerrar.addEventListener("click", function(event) {
+                ocultarPopup(miPopup);
+            });
+        }
+
+        function ocultarPopup(miPopup) {
+            var fondoPopup = miPopup.parentElement.querySelector(".fondoPopup");
+            miPopup.style.display = "none";
+            fondoPopup.style.display = "none";
+            var video = miPopup.querySelector("video");
+            video.pause();
+            video.currentTime = 0;
+        }
+
+        var botones = document.querySelectorAll("button[data-video]");
+        botones.forEach(function(boton) {
+            boton.addEventListener("click", function(event) {
+                abrir(this);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
